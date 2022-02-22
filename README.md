@@ -1,1 +1,1 @@
-# Design-Studio
+# Design Studio
