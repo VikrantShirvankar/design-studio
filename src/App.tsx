@@ -13,14 +13,11 @@ function App() {
     <div className="design-studio-app">
       <Navigation />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='portfolio' element={<Portfolio />} />
-        <Route path='contact' element={<Contact />} />
-        <Route
-          path="*"
-          element={<NoMatchFound />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NoMatchFound />} />
       </Routes>
     </div>
   );
