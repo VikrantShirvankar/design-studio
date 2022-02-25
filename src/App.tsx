@@ -7,6 +7,7 @@ import Contact from './Containers/Contact/Contact';
 import Portfolio from './Containers/Portfolio/Portfolio';
 import Navigation from './Components/Navigatiion/Navigation';
 import NoMatchFound from './Containers/NoMatchFound/NoMatchFound';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           <Route path="*" element={<NoMatchFound />} />
         </Routes>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
