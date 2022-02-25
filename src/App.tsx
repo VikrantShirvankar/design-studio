@@ -11,14 +11,18 @@ import NoMatchFound from './Containers/NoMatchFound/NoMatchFound';
 function App() {
   return (
     <div className="design-studio-app">
-      <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<NoMatchFound />} />
-      </Routes>
+      <header>
+        <Navigation />
+      </header>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoMatchFound />} />
+        </Routes>
+      </main>
     </div>
   );
 }

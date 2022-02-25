@@ -1,3 +1,9 @@
+.sticky-navigation {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+
 .navigation-container {
   padding: 0 30px;
   display: flex;
@@ -12,17 +18,17 @@
   }
 
   .menu-items-wrapper {
-    flex: 3;
+    flex: 6;
     align-items: center;
     display: flex;
     .menu-items {
       color: #000;
       font-weight: 400;
-      padding: 20px 26px;
+      padding: 15px 26px;
       text-transform: capitalize;
-      font-size: 14px;
+      font-size: 12px;
       cursor: pointer;
-      &:hover {
+      a:hover {
         text-decoration: underline;
       }
     }
@@ -32,22 +38,11 @@
     display: flex;
     align-items: center;
   }
-
-  @media screen and (max-width: 768px) {
-    .header-inner {
-      display: none;
-    }
-    .mobile-menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 }
 
 .mobile-navigation-container {
   .menu-title {
-    padding: 15px 0;
+    padding: 5px 0;
   }
 }
 

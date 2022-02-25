@@ -52,9 +52,11 @@ const Navigation = () => {
     : '';
 
   return (
-    <>
+    <div className="sticky-navigation">
       <div className={`navigation-container ${mobileNavigationContainer}`}>
-        <div className="menu-title">Rettro</div>
+        <div className="menu-title">
+          <Link to="/">Rettro</Link>
+        </div>
 
         {!isMobileMenu && (
           <div className="menu-items-wrapper">
@@ -71,11 +73,14 @@ const Navigation = () => {
         <Outlet />
       </div>
       {isMneuDrawerOpen && isMobileMenu && (
-        <div className="mobile-menu-wrapper">
+        <div
+          className="mobile-menu-wrapper"
+          onClick={() => setIsMenuDrawerOpen(false)}
+        >
           <NavItems menuItems={menuItems} />
         </div>
       )}
-    </>
+    </div>
   );
 };
 
