@@ -1,7 +1,39 @@
 .banner-container {
-  height: 890px;
-  background-image: url('../../Assets/images/h1_hero2.png.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 1;
+  .banner-image-container {
+    height: 890px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    .banner-overlay {
+      background-color: rgba(0, 0, 0, .2);
+      height: 100%;
+    }
+  }
+
+  .banner-content-wrapper {
+    height: 100%;
+    position: relative;
+    .banner-content {
+      position: absolute;
+      bottom: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .description {
+        font-size: 30px;
+        padding-left: 150px;
+        color: #fff;
+      }
+      .thumbnail-wrapper {
+        display: flex;
+        padding-right: 150px;
+        .thumbnail {
+          width: 130px;
+          height: 61px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }
