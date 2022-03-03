@@ -4,6 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
     .banner-overlay {
       background-color: rgba(0, 0, 0, 0.2);
       height: 100%;
@@ -61,6 +63,7 @@
           width: 130px;
           height: 61px;
           margin-right: 10px;
+          cursor: pointer;
           &:last-child {
             margin-right: 0;
           }
