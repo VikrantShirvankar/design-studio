@@ -55,7 +55,9 @@ const Navigation = () => {
     <div className="sticky-navigation">
       <div className={`navigation-container ${mobileNavigationContainer}`}>
         <div className="menu-title">
-          <Link to="/">Rettro</Link>
+          <Link to="/" className="logo-wrapper">
+            <img src="https://drive.google.com/uc?export=view&id=1-S5-j7NAkxc8ESQ0Ds9OhIiHkhd2BY5_" />
+          </Link>
         </div>
 
         {!isMobileMenu && (
