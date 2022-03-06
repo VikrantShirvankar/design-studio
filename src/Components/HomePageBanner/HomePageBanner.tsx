@@ -8,29 +8,26 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const bannerData = [
   {
-    id: 1,
+    id: 3,
     image:
-      'https://drive.google.com/uc?export=view&id=12X7RCMZIa-4qjBNg91LOYc3obzkS_nXO',
+      'https://drive.google.com/uc?export=view&id=1OmHyuMerFg4X8XQhOZIe1Ehh6Oqdtm9g',
     thumbnail:
-      'https://drive.google.com/uc?export=view&id=1CD8f-tIbfATBKB55qAAQw_REhtzyiG6A',
-    text: ''
+      'https://drive.google.com/uc?export=view&id=1SI9rmt5iC75wNEEYontPbOBWtgYp1Be8',
   },
   {
     id: 2,
     image:
       'https://drive.google.com/uc?export=view&id=1CgpF5Z4lPqrCG0VYJ32Asc0twviuS63P',
     thumbnail:
-      'https://drive.google.com/uc?export=view&id=1mPbXqJBsa753J6IXcNjJx16PNeoyHiZO',
-    text: ''
+      'https://drive.google.com/uc?export=view&id=1mPbXqJBsa753J6IXcNjJx16PNeoyHiZO'
   },
   {
-    id: 3,
+    id: 1,
     image:
-      'https://drive.google.com/uc?export=view&id=1OmHyuMerFg4X8XQhOZIe1Ehh6Oqdtm9g',
+      'https://drive.google.com/uc?export=view&id=12X7RCMZIa-4qjBNg91LOYc3obzkS_nXO',
     thumbnail:
-      'https://drive.google.com/uc?export=view&id=1SI9rmt5iC75wNEEYontPbOBWtgYp1Be8',
-    text: ''
-  }
+      'https://drive.google.com/uc?export=view&id=1CD8f-tIbfATBKB55qAAQw_REhtzyiG6A'
+  },
 ];
 const settings = {
   dots: false,
@@ -38,7 +35,9 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrow: true
+  arrow: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
 };
 const HomePageBanner = () => {
   return (
@@ -54,24 +53,6 @@ const HomePageBanner = () => {
             </div>
           ))}
         </Slider>
-
-        <div className="banner-overlay" />
-      </div>
-      <div className="banner-content-wrapper">
-        <div className="banner-content">
-          <div className="description">01 Travel Pro</div>
-          <div className="thumbnail-wrapper">
-            {bannerData?.map((banner) => (
-              <div
-                className="thumbnail"
-                style={{
-                  backgroundImage: `url(${banner.thumbnail})`
-                }}
-                // onClick={() => changeBannerImage(banner.image)}
-              ></div>
-            ))}
-          </div>
-        </div>
       </div>
     </div>
   );
