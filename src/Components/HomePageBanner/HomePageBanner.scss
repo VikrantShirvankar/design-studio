@@ -1,35 +1,55 @@
-.banner-container {
-  .banner-image-container {
-    height: 890px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 1;
-    -webkit-transition: background-image 0.5s ease-in-out;
-    transition: background-image 0.5s ease-in-out;
+.banner-wrapper {
+  position: relative;
+  .banner-container {
+    position: relative;
+    .slider__image {
+      box-sizing: border-box;
+      padding-bottom: 45%;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .slick-next {
+      right: 0 !important;
+      width: 100px !important;
+      z-index: 1;
+      @media (max-width: 768px) {
+        width: 50px !important;
+      }
+    }
+    .slick-prev {
+      left: 0 !important;
+      width: 100px !important;
+      z-index: 1;
+      @media (max-width: 768px) {
+        width: 50px !important;
+      }
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 40px !important;
+  
+      @media (max-width: 768px) {
+        font-size: 25px !important;
+      }
+    }
     .banner-overlay {
       background-color: rgba(0, 0, 0, 0.2);
       height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
     }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      height: 600px;
-    }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      height: 650px;
-    }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
-      height: 600px;
-    }
-    @media (max-width: 575px) {
-      height: 600px;
-    }
+    
   }
-
+  
   .banner-content-wrapper {
     height: 100%;
     position: relative;
     .banner-content {
       position: absolute;
-      bottom: 50px;
+      bottom: 10px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -37,6 +57,7 @@
       @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        bottom: -4px;
       }
       .description {
         font-size: 30px;
@@ -47,12 +68,13 @@
         }
         @media (max-width: 768px) {
           padding: 0;
-          padding-bottom: 20px;
+          padding-bottom: 10px;
+          font-size: 15px;
         }
       }
       .thumbnail-wrapper {
         display: flex;
-        padding-right: 150px;
+        padding-right: 50px;
         @media (max-width: 992px) {
           padding-right: 40px;
         }
@@ -60,16 +82,18 @@
           padding: 0;
         }
         .thumbnail {
-          width: 130px;
-          height: 61px;
+          width: 100px;
+          height: 50px;
           margin-right: 10px;
           cursor: pointer;
+          background-size: 100%;
+          background-repeat: no-repeat;
           &:last-child {
             margin-right: 0;
           }
-          @media (max-width: 500px) {
-            width: 80px;
-            height: 50px;
+          @media (max-width: 768px) {
+            width: 40px;
+            height: 30px;
           }
         }
       }
