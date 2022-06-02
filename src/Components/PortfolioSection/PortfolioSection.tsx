@@ -8,18 +8,18 @@ const PortfolioSection = () => {
       <div className="portfolio-wrapper">
         <div className="row">
           <div className="block">
-            <img src="https://preview.colorlib.com/theme/rettro/assets/img/gallery/xgallery1.png.pagespeed.ic.ruYLaOoOtt.webp" />
+            <img src="images/Design/Home/Portfolio_Section/design_1.png" />
           </div>
           <div className="block">
-            <img src="https://preview.colorlib.com/theme/rettro/assets/img/gallery/xgallery2.png.pagespeed.ic.UIrYvLtnDR.webp" />
+            <img src="images/Design/Home/Portfolio_Section/design_2.png" />
           </div>
         </div>
         <div className="row">
           <div className="block">
-            <img src="https://preview.colorlib.com/theme/rettro/assets/img/gallery/xgallery3.png.pagespeed.ic.aEDsrmDz09.webp" />
+            <img src="images/Design/Home/Portfolio_Section/design_3.png" />
           </div>
           <div className="block">
-            <img src="https://preview.colorlib.com/theme/rettro/assets/img/gallery/xgallery4.png.pagespeed.ic.QchecjF9TD.webp" />
+            <img src="images/Design/Home/Portfolio_Section/design_4.png" />
           </div>
         </div>
       </div>

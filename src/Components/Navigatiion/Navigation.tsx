@@ -56,7 +56,7 @@ const Navigation = () => {
       <div className={`navigation-container ${mobileNavigationContainer}`}>
         <div className="menu-title">
           <Link to="/" className="logo-wrapper">
-            <img src="https://drive.google.com/uc?export=view&id=1-S5-j7NAkxc8ESQ0Ds9OhIiHkhd2BY5_" />
+            <img src="/images/Logo/brand_logo.jpg" />
           </Link>
         </div>
 

@@ -9,25 +9,19 @@ import 'slick-carousel/slick/slick-theme.css';
 const bannerData = [
   {
     id: 3,
-    image:
-      'https://drive.google.com/uc?export=view&id=1OmHyuMerFg4X8XQhOZIe1Ehh6Oqdtm9g',
-    thumbnail:
-      'https://drive.google.com/uc?export=view&id=1SI9rmt5iC75wNEEYontPbOBWtgYp1Be8',
+    image: 'images/Banner/Slider/banner_1.jpg',
+    thumbnail: 'images/Banner/Thambnail/banner_1.jpg'
   },
   {
     id: 2,
-    image:
-      'https://drive.google.com/uc?export=view&id=1CgpF5Z4lPqrCG0VYJ32Asc0twviuS63P',
-    thumbnail:
-      'https://drive.google.com/uc?export=view&id=1mPbXqJBsa753J6IXcNjJx16PNeoyHiZO'
+    image: 'images/Banner/Slider/banner_2.jpg',
+    thumbnail: 'images/Banner/Thumbnail/banner_2.jpg'
   },
   {
     id: 1,
-    image:
-      'https://drive.google.com/uc?export=view&id=12X7RCMZIa-4qjBNg91LOYc3obzkS_nXO',
-    thumbnail:
-      'https://drive.google.com/uc?export=view&id=1CD8f-tIbfATBKB55qAAQw_REhtzyiG6A'
-  },
+    image: 'images/Banner/Slider/banner_3.jpg',
+    thumbnail: 'images/Banner/Thumbnail/banner_3.jpg'
+  }
 ];
 const settings = {
   dots: false,
@@ -37,7 +31,7 @@ const settings = {
   slidesToScroll: 1,
   arrow: true,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 3000
 };
 const HomePageBanner = () => {
   return (
