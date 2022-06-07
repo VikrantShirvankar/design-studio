@@ -1,5 +1,3 @@
-import { doc } from 'prettier';
-import React, { useEffect, useState } from 'react';
 import './HomePageBanner.scss';
 import Slider from 'react-slick';
 

@@ -56,7 +56,7 @@ const Navigation = () => {
       <div className={`navigation-container ${mobileNavigationContainer}`}>
         <div className="menu-title">
           <Link to="/" className="logo-wrapper">
-            <img src="/images/Logo/brand_logo.jpg" />
+            <img src="/images/Logo/brand_logo_green.jpg" />
           </Link>
         </div>
 
