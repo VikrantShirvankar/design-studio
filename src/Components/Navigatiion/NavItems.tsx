@@ -15,7 +15,7 @@ const NavItems = (props: Props) => {
   return (
     <>
       {menuItems?.map((menuItem) => (
-        <div className="menu-items">
+        <div className="menu-items" key={menuItem.name}>
           <Link to={menuItem.path}>{menuItem.name}</Link>
         </div>
       ))}

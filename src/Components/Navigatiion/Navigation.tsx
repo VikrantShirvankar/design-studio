@@ -26,7 +26,7 @@ const menuItems = [
 const Navigation = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(window.innerWidth <= 768);
   const [isMneuDrawerOpen, setIsMenuDrawerOpen] = useState(false);
-
+  
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize);
     return () => {
@@ -36,8 +36,14 @@ const Navigation = () => {
 
   const handleWindowResize = () => {
     if (window.innerWidth > 768) {
+      const slickPrevButton = Array.from(
+        document.getElementsByClassName(
+          'slick-prev'
+        ) as HTMLCollectionOf<HTMLElement>
+      )?.[0];
       setIsMobileMenu(false);
       setIsMenuDrawerOpen(false);
+      slickPrevButton.style.zIndex = '1';
     } else {
       setIsMobileMenu(true);
     }
@@ -45,6 +51,16 @@ const Navigation = () => {
 
   const toggleMenuDrawer = () => {
     setIsMenuDrawerOpen(!isMneuDrawerOpen);
+    const slickPrevButton = Array.from(
+      document.getElementsByClassName(
+        'slick-prev'
+      ) as HTMLCollectionOf<HTMLElement>
+    )?.[0];
+    if (isMneuDrawerOpen) {
+      slickPrevButton.style.zIndex = '1';
+    } else {
+      slickPrevButton.style.zIndex = '0';
+    }
   };
 
   const mobileNavigationContainer = isMobileMenu

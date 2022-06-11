@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="footer-menu">
           <ul>
             {menuItems?.map((menuItem) => (
-              <li>
+              <li key={menuItem.name}>
                 <Link to={menuItem.path}>{menuItem.name}</Link>
               </li>
             ))}
@@ -47,7 +47,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        Copyright ©2022 All rights reserved | This template is made by Vikrant Shirvankar
+        Copyright ©2022 All rights reserved | This template is made by Vikrant
+        Shirvankar
       </div>
     </div>
   );
