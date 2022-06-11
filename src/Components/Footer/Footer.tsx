@@ -24,7 +24,11 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-top">
-        <div className="footer-title">Rettro</div>
+        <div className="footer-title">
+          <Link to="/" className="logo-wrapper">
+            <img src="/images/Logo/brand_logo_green.png" />
+          </Link>
+        </div>
         <div className="footer-menu">
           <ul>
             {menuItems?.map((menuItem) => (
@@ -35,20 +39,28 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-icons">
-          <Link to="/" className="footer-icon-links">
+          {/* <Link to="/" className="footer-icon-links">
             <i className="fab fa-twitter" />
-          </Link>
-          <Link to="/" className="footer-icon-links">
+          </Link> */}
+          <a
+            href="https://www.facebook.com/SubakArt-Studio-100254375231999"
+            className="footer-icon-links"
+            target="new"
+          >
             <i className="fab fa-facebook-f" />
-          </Link>
-          <Link to="/" className="footer-icon-links last-link">
-            <i className="fab fa-pinterest-p" />
-          </Link>
+          </a>
+          <a
+            href="https://instagram.com/subakartstudio_?igshid=YmMyMTA2M2Y="
+            className="footer-icon-links last-link"
+            target="new"
+          >
+            <i className="fab fa-instagram" />
+          </a>
         </div>
       </div>
       <div className="footer-bottom">
-        Copyright ©2022 All rights reserved | This template is made by Vikrant
-        Shirvankar
+        Copyright ©2022 All rights reserved | This template is made by Subak
+        Art
       </div>
     </div>
   );

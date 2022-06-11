@@ -12,7 +12,7 @@ const AboutMeSection = () => {
         Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet
       </div>
       <Link to="/about">
-        <div className="about-btn">About Me</div>
+        <div className="about-btn">About Us</div>
       </Link>
     </div>
   );

@@ -3,12 +3,12 @@
   color: #fff;
   text-align: center;
   .footer-top {
-    padding-top: 90px;
+    padding-top: 70px;
     padding-bottom: 15px;
     .footer-title {
-      padding-bottom: 25px;
-      font-size: 25px;
-      font-weight: bold;
+      img {
+        width: 160px;
+      }
     }
     .footer-menu {
       margin-bottom: 15px;
@@ -45,6 +45,9 @@
         margin-right: 16px;
         i {
           font-size: 12px;
+        }
+        &:hover {
+          background-color: #B5D236;
         }
       }
       .last-link {

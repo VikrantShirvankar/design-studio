@@ -5,17 +5,20 @@ const PortfolioSection = () => {
   return (
     <div className="portfolio-container">
       <div className="portfolio-wrapper">
+        <div className="portfolio-section-title">
+          <h1>Our Portfolio</h1>
+        </div>
         <div className="row">
           <div className="block">
             <img src="images/Design/Home/Portfolio_Section/design_1.png" />
             <div className="block-title-background" />
-            <div className="block-title">Block Title</div>
+            <div className="block-title">Canvas Painting</div>
             <div className="block-overlay" />
           </div>
           <div className="block">
             <img src="images/Design/Home/Portfolio_Section/design_2.png" />
             <div className="block-title-background" />
-            <div className="block-title">Block Title</div>
+            <div className="block-title">Wall Painting / Installation</div>
             <div className="block-overlay" />
           </div>
         </div>
@@ -23,13 +26,13 @@ const PortfolioSection = () => {
           <div className="block">
             <img src="images/Design/Home/Portfolio_Section/design_3.png" />
             <div className="block-title-background" />
-            <div className="block-title">Block Title</div>
+            <div className="block-title">Bottle Art</div>
             <div className="block-overlay" />
           </div>
           <div className="block">
             <img src="images/Design/Home/Portfolio_Section/design_4.png" />
             <div className="block-title-background" />
-            <div className="block-title">Block Title</div>
+            <div className="block-title">Digital Painting</div>
             <div className="block-overlay" />
           </div>
         </div>

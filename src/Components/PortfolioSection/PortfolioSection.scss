@@ -1,17 +1,23 @@
 .portfolio-container {
-  padding-top: 110px;
+  padding-top: 40px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   @media (max-width: 768px) {
-    padding-top: 50px;
+    padding-top: 20px;
   }
   .portfolio-wrapper {
     max-width: 1280px;
     display: flex;
-
+    .portfolio-section-title {
+      border-bottom: 1px solid #B5D236;
+      margin: 0 15px 15px 15px;
+      h1 {
+        margin-block-end: 4px;
+      }
+    }
     @media (max-width: 500px) {
       width: 100%;
     }
@@ -51,7 +57,7 @@
       .block-title {
         position: absolute;
         bottom: 11px;
-        padding: 0 10px;
+        padding: 0 15px;
         color: #000;
         font-weight: bold;
         font-size: 20px;
@@ -76,7 +82,7 @@
     }
   }
   .view-more-wrapper {
-    margin-top: 50px;
+    margin-top: 25px;
     .more {
       padding: 12px 35px;
       cursor: pointer;
@@ -84,6 +90,9 @@
       font-size: 15px;
       color: #071112;
       font-weight: 600;
+      &:hover {
+        color: #B5D236;
+      }
     }
   }
 }
