@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const bannerData = [
   {
-    id: 3,
+    id: 1,
     image: 'images/Banner/Slider/banner_1.jpg',
     thumbnail: 'images/Banner/Thambnail/banner_1.jpg'
   },
@@ -16,9 +16,14 @@ const bannerData = [
     thumbnail: 'images/Banner/Thumbnail/banner_2.jpg'
   },
   {
-    id: 1,
+    id: 3,
     image: 'images/Banner/Slider/banner_3.jpg',
     thumbnail: 'images/Banner/Thumbnail/banner_3.jpg'
+  },
+  {
+    id: 4,
+    image: 'images/Banner/Slider/banner_4.jpg',
+    thumbnail: 'images/Banner/Thumbnail/banner_4.jpg'
   }
 ];
 const settings = {

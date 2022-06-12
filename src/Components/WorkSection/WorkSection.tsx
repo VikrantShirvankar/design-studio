@@ -7,10 +7,11 @@ const WorkSection = () => {
     <div className="work-section-container">
       <div className="title">Life is about Creating Experiences</div>
       <div className="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-        Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet
+        Subak Art Studio specialist in Bottle Art. Concept of creation & Art,
+        Bottle Art, Canvas Painting,wall Painting, Art installation,
+        Illustration, Craft, We are heavily involved in Bottle Art and all types
+        Painting and firmly believe in creative stunning visual experiences be
+        it in any form.
       </div>
     </div>
   );
