@@ -26,7 +26,7 @@ const menuItems = [
 const Navigation = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(window.innerWidth <= 768);
   const [isMneuDrawerOpen, setIsMenuDrawerOpen] = useState(false);
-  
+
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize);
     return () => {
@@ -43,7 +43,9 @@ const Navigation = () => {
       )?.[0];
       setIsMobileMenu(false);
       setIsMenuDrawerOpen(false);
-      slickPrevButton.style.zIndex = '1';
+      if (slickPrevButton?.style) {
+        slickPrevButton.style.zIndex = '1';
+      }
     } else {
       setIsMobileMenu(true);
     }

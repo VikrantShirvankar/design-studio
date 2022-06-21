@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PageHeaderBanner from '../../Components/PageHeaderBanner/PageHeaderBanner';
 
 const About = () => {
   return (
-    <div>
-      About
-    </div>
+    <>
+      <PageHeaderBanner pageName="About" />
+      <div style={{ height: 500 }} />
+    </>
   );
 };
 
